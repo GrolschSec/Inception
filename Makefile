@@ -3,16 +3,16 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: rlouvrie <rlouvrie@student.42.fr >         +#+  +:+       +#+         #
+#    By: rlouvrie <rlouvrie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/21 17:28:40 by rlouvrie          #+#    #+#              #
-#    Updated: 2023/12/04 13:21:08 by rlouvrie         ###   ########.fr        #
+#    Updated: 2023/12/04 23:08:34 by rlouvrie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 COMPOSE_FILE := srcs/docker-compose.yaml
 
-COMPOSE := docker-compose -f $(COMPOSE_FILE)
+COMPOSE := docker compose -f $(COMPOSE_FILE)
 
 all: up
 
