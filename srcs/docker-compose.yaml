@@ -2,7 +2,6 @@ version: '3'
 
 services:
   nginx:
-    image: nginx
     container_name: nginx
     build:
       context: requirements/nginx
@@ -18,7 +17,6 @@ services:
     volumes:
       - wordpress:/var/www/html
   mariadb:
-    image: mariadb
     container_name: mariadb
     build:
       context: requirements/mariadb
@@ -32,7 +30,6 @@ services:
     volumes:
       - mariadb:/var/lib/mysql
   wordpress:
-    image: wordpress
     container_name: wordpress
     build:
       context: requirements/wordpress
